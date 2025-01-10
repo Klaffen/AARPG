@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://bhu455ane2n81"]
+[gd_scene load_steps=43 format=3 uid="uid://bhu455ane2n81"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_bxqgx"]
 [ext_resource type="Texture2D" uid="uid://p8n4sr3pgfhx" path="res://Player/Sprites/PlayerSprite02.png" id="2_sbqkj"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://Player/Scripts/player_interactions_host.gd" id="10_0v64l"]
 [ext_resource type="PackedScene" uid="uid://gyfy2y87qlb8" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="10_pb2pv"]
 [ext_resource type="Script" path="res://Player/Scripts/states/state_stun.gd" id="11_sbknj"]
+[ext_resource type="Script" path="res://Player/Scripts/player_camera_script.gd" id="12_h6uqv"]
 [ext_resource type="PackedScene" uid="uid://d78wx5ga3ve0" path="res://GeneralNodes/HitBox/hit_box.tscn" id="13_nrro2"]
 [ext_resource type="AudioStream" uid="uid://b5lfyhy1kj4o8" path="res://Player/Audio/hit_player.wav" id="14_ekut1"]
 
@@ -667,6 +668,7 @@ script = ExtResource("11_sbknj")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 editor_draw_limits = true
+script = ExtResource("12_h6uqv")
 
 [node name="Audio" type="Node2D" parent="."]
 
